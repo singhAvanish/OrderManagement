@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Order Management System (Admin Panel)
 
+A full-stack Order Management System built with **Next.js**, **Redux Toolkit**, **Node.js**, **MongoDB**, and **JWT authentication**. This admin panel allows authorized admins to manage customer orders — including viewing, updating, and deleting orders — with secure access and a responsive dashboard interface.
+
+---
 ## Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🔐 Admin Credentials (for Testing)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use these credentials to log in at `/admin/login`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```txt
+Email: admin@example.com
+Password: securePass123
+```
+Only users with the correct passkey can create a new admin account.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ADMIN_SIGNUP_KEY=AXSTECH
+Set this in your .env file (backend):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧪 Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/order-management.git
+cd order-management
+2️⃣ Install Dependencies
+
+npm install
+3️⃣ Create .env File
+Create a .env file in the root of the backend and add:
+
+Backend Port = 4000
+MONGO_URI=mongodb+srv://avanish121299:Tyrmq36lcPlzBvT1@cluster0.ssdzk9a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=avi121299
+ADMIN_SIGNUP_KEY=AXSTECH
+4️⃣ Run the Application
+
+npm run dev
+Frontend is usually at http://localhost:3000
+Backend runs on http://localhost:4000
+
